@@ -115,7 +115,12 @@ h2{
 }
 //<!--------GALLERY-------->
 
-
+//<!--------FORM-CONTACTO-------->
+::placeholder{
+ border-color: $background;
+ color: whitesmoke;
+ 
+}
 
 //<!--------FOOTER-------->
 .pFooter{

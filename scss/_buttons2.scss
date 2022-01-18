@@ -1,9 +1,3 @@
-
-.buttonSend {
-  animation: wiggle 2s linear infinite;
-}
-
-
 /* Keyframes */
 @keyframes wiggle {
   0%, 7% {
@@ -29,40 +23,34 @@
   }
 }
 
-.buttonSend {
-  
-  
-  height: 3em;
-  width: 6em;
-  
-  background: $rosado;
-  //background: linear-gradient(top, #705a5a, #6b4c4c);
-  border: none;
-  border-top: 3px solid $azul;
-  border-radius: 0 0 0.2em 0.2em;
-  color: $background;
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size: 0.7em;
-  transform-origin: 50% 5em;
+.button-parent{
+    height: 3em;
+    width: 6em;
+    background: $rosado;
+    border: none;
+    border-top: 3px solid $azul;
+    border-radius: 0 0 0.2em 0.2em;
+    color: $background;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 0.7em;
+    transform-origin: 50% 5em;
+
+    &-buttonSend{
+        @extend .button-parent;
+        animation: wiggle 2s linear infinite;
+
+    }
+
+    &-buttonReset{
+        @extend .button-parent;
+    }
 }
 
 
-.buttonReset {
-  
-  
-  height: 3em;
-  width: 6em;
-  
-  background: $rosado;
-  //background: linear-gradient(top, verdeClaro, verdeOscuro);
-  border: none;
-  border-top: 3px solid $azul;
-  border-radius: 0 0 0.2em 0.2em;
-  color: $background;
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size: 0.7em;
-  transform-origin: 50% 5em;
-}
+
+
+
+
 
 .button {
   
