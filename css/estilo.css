@@ -109,9 +109,9 @@ li {
   position: static; }
 
 .blender {
-  background-image: url("https://images.unsplash.com/photo-1500534623283-312aade485b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-color: #6ca5895b;
   background-position: 0 53%;
-  padding: 40px;
+  padding: 30px;
   filter: grayscale(20%) invert(80%); }
 
 h2 {
@@ -122,6 +122,10 @@ h2 {
 
 .imput {
   background-color: #ECE6E0; }
+
+::placeholder {
+  border-color: #ECE6E0;
+  color: whitesmoke; }
 
 .pFooter {
   font-size: 15px;
@@ -185,9 +189,6 @@ h2 {
     transform: scale(1.1);
     transition: all .45s; }
 
-.buttonSend {
-  animation: wiggle 2s linear infinite; }
-
 /* Keyframes */
 @keyframes wiggle {
   0%, 7% {
@@ -205,7 +206,7 @@ h2 {
   40%, 100% {
     transform: rotateZ(0); } }
 
-.buttonSend {
+.button-parent, .button-parent-buttonSend, .button-parent-buttonReset {
   height: 3em;
   width: 6em;
   background: #a1799e;
@@ -216,18 +217,8 @@ h2 {
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 0.7em;
   transform-origin: 50% 5em; }
-
-.buttonReset {
-  height: 3em;
-  width: 6em;
-  background: #a1799e;
-  border: none;
-  border-top: 3px solid #121a33de;
-  border-radius: 0 0 0.2em 0.2em;
-  color: #ECE6E0;
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size: 0.7em;
-  transform-origin: 50% 5em; }
+  .button-parent-buttonSend {
+    animation: wiggle 2s linear infinite; }
 
 .button {
   --offset: 10px;
