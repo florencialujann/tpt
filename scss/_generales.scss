@@ -115,7 +115,20 @@ h2{
     background-color: $background;
 }
 //<!--------GALLERY-------->
+.cajaChica{
+  background-color: $background;
+  color: $azul;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 190px;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  font-size: 15px;
 
+  &.h5CajaChica{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+}
 //<!--------FORM-CONTACTO-------->
 ::placeholder{
  border-color: $background;

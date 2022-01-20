@@ -123,6 +123,17 @@ h2 {
 .imput {
   background-color: #ECE6E0; }
 
+.cajaChica {
+  background-color: #ECE6E0;
+  color: #121a33de;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 190px;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  font-size: 15px; }
+  .cajaChica.h5CajaChica {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
 ::placeholder {
   border-color: #ECE6E0;
   color: whitesmoke; }
