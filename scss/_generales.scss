@@ -111,9 +111,7 @@ h2{
   font-size:60px;
   filter:invert(100%)
 }
-.imput{
-    background-color: $background;
-}
+
 //<!--------GALLERY-------->
 .cajaChica{
   background-color: $background;
@@ -130,13 +128,30 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
 //<!--------FORM-CONTACTO-------->
-::placeholder{
- border-color: $background;
- color: whitesmoke;
 
- 
+
+.pContacto{
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+::placeholder{
+ color: rgb(186, 161, 161);
+ 
+ 
+}
+.imput {
+  background-color: $background; 
+  border-color: $verdeClaro;
+  border-style: solid;
+  font-size: 13px;
+  
+}
+.label{
+  font-weight: bold;
+  border-radius: 10px     10px      0           0;
+  
+}
 //<!--------FOOTER-------->
 .pFooter{
     font-size: 15px;
