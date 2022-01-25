@@ -27,12 +27,12 @@
         justify-content: center;
     }
 
-    .contenedor-general-main {
+    .general-container {
         align-content: center;
 
     }
 
-    .contenedor-formulario {
+    .container-form {
         display: flex;
         justify-content: center;
     }
@@ -66,14 +66,7 @@
         justify-content: center;
     }
 
-    .contenedor-general-main {
-        width: 100%;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
 
-    }
 
     .main-links a {
         color: $azul;
@@ -91,7 +84,7 @@
         font-size: 3rem;
     }
 
-    .contenedor-general-main {
+    .general-container {
         flex-direction: column;
     }
 

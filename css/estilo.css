@@ -39,10 +39,8 @@ h6 {
 
 body {
   background-color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-#body {
-  background-color: white; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.5rem; }
 
 .general-container {
   width: 100%;
@@ -125,16 +123,26 @@ h2 {
   font-size: 60px;
   filter: invert(100%); }
 
+.galeria {
+  justify-content: center;
+  align-self: center;
+  margin: 1rem;
+  justify-content: center; }
+
 .cajaChica {
   background-color: white;
   color: #121a33de;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
   width: 190px;
-  margin-top: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   font-size: 15px; }
-  .cajaChica.h5CajaChica {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .cajaChica.tituloCajaChica {
+    color: lightcoral; }
+
+.cajaGrande {
+  margin: 1rem;
+  justify-content: center; }
 
 .pContacto {
   font-size: 13px;
@@ -320,9 +328,9 @@ h2 {
   .main-links {
     text-align: center;
     justify-content: center; }
-  .contenedor-general-main {
+  .general-container {
     align-content: center; }
-  .contenedor-formulario {
+  .container-form {
     display: flex;
     justify-content: center; } }
 
@@ -344,12 +352,6 @@ h2 {
     display: inline-block;
     display: flex;
     justify-content: center; }
-  .contenedor-general-main {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
   .main-links a {
     color: #121a33de; }
   .main-links a:hover {
@@ -359,7 +361,7 @@ h2 {
 @media only screen and (max-width: 768px) {
   .main-links a {
     font-size: 3rem; }
-  .contenedor-general-main {
+  .general-container {
     flex-direction: column; }
   .cuadrados {
     flex-direction: column; }
