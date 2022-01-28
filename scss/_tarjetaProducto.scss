@@ -1,0 +1,56 @@
+.galeria{
+   background-color: whitesmoke;
+   margin: 0 auto;
+   
+   vertical-align: middle;
+   float: none;
+}
+
+.card{
+    margin: 1rem;
+    background-color: $verdeClaro;
+    width: 252px;
+}
+.cajaImagen{
+width: 250px;
+height: 250px;
+max-height: 250px;
+min-height: 250px;
+max-width: 250px;
+min-width: 250px;
+
+}
+.imagenProducto{
+    width: 250px;
+height: 250px;
+max-height: 250px;
+min-height: 250px;
+max-width: 250px;
+min-width: 250px;
+}
+.card-body{
+width: 250px;
+height: 160px;
+max-height: 160px;
+min-height: 160px;
+max-width: 250px;
+min-width: 250px;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.card-text{
+font-size: 12px;
+}
+.btn{
+    background-color: $rosado;
+    border-color: $verdeOscuro;
+}
+.row{
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    
+}

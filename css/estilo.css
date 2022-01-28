@@ -105,7 +105,7 @@ li {
   transition: all 400ms ease; }
 
 .right a:hover {
-  background: #a1799e;
+  background: #cec2cc;
   color: white;
   padding: 4px;
   border-radius: 15px;
@@ -123,12 +123,6 @@ h2 {
   font-size: 60px;
   filter: invert(100%); }
 
-.galeria {
-  justify-content: center;
-  align-self: center;
-  margin: 1rem;
-  justify-content: center; }
-
 .cajaChica {
   background-color: white;
   color: #121a33de;
@@ -137,12 +131,6 @@ h2 {
   width: 190px;
   padding-top: 1rem;
   font-size: 15px; }
-  .cajaChica.tituloCajaChica {
-    color: lightcoral; }
-
-.cajaGrande {
-  margin: 1rem;
-  justify-content: center; }
 
 .pContacto {
   font-size: 13px;
@@ -171,7 +159,7 @@ h2 {
 
 .line {
   height: 2px;
-  background-color: #a1799e;
+  background-color: #cec2cc;
   width: 100%;
   margin-bottom: 2rem; }
 
@@ -223,6 +211,71 @@ h2 {
     transform: scale(1.1);
     transition: all .45s; }
 
+.galeria {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  vertical-align: middle;
+  float: none; }
+
+.card {
+  margin: 1rem;
+  background-color: #6ca5895b;
+  width: 252px; }
+
+.cajaImagen {
+  width: 250px;
+  height: 250px;
+  max-height: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  min-width: 250px; }
+
+.imagenProducto {
+  width: 250px;
+  height: 250px;
+  max-height: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  min-width: 250px; }
+
+.card-body {
+  width: 250px;
+  height: 160px;
+  max-height: 160px;
+  min-height: 160px;
+  max-width: 250px;
+  min-width: 250px; }
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: lighter; }
+
+.card-text {
+  font-size: 12px; }
+
+.btn {
+  background-color: #cec2cc;
+  border-color: #0c554cde; }
+
+.row {
+  justify-content: center;
+  align-self: center;
+  align-content: center; }
+
+.tarjeta {
+  background-color: #6ca5895b; }
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: lighter; }
+
+.card-text {
+  font-size: 12px; }
+
+.btn {
+  background-color: #cec2cc;
+  border-color: #0c554cde; }
+
 /* Keyframes */
 @keyframes wiggle {
   0%, 7% {
@@ -243,7 +296,7 @@ h2 {
 .button-parent, .button-parent-buttonSend, .button-parent-buttonReset {
   height: 3em;
   width: 6em;
-  background: #a1799e;
+  background: #cec2cc;
   border: none;
   border-top: 3px solid #121a33de;
   border-radius: 0 0 0.2em 0.2em;
@@ -308,78 +361,3 @@ h2 {
       right: calc(var(--horizontal-offset) - var(--border-size)); }
   .button:hover .button__vertical {
     transform: scaleY(0); }
-
-/* responsive */
-@media only screen and (max-width: 480px) {
-  .general-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%; }
-  .left {
-    align-self: center; }
-  .left img {
-    align-self: center;
-    margin-left: 0; }
-  .right {
-    align-self: center; }
-  .main-links {
-    text-align: center;
-    justify-content: center; }
-  .general-container {
-    align-content: center; }
-  .container-form {
-    display: flex;
-    justify-content: center; } }
-
-@media only screen and (max-width: 600px) {
-  .general-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .flex-container {
-    display: flex;
-    flex-direction: column; }
-  .left {
-    display: inline-block;
-    align-self: center;
-    text-align: center; }
-  .right {
-    display: inline-block;
-    display: flex;
-    justify-content: center; }
-  .main-links a {
-    color: #121a33de; }
-  .main-links a:hover {
-    border-radius: 5px;
-    padding: 5px; } }
-
-@media only screen and (max-width: 768px) {
-  .main-links a {
-    font-size: 3rem; }
-  .general-container {
-    flex-direction: column; }
-  .cuadrados {
-    flex-direction: column; }
-  .cuadrado1 {
-    width: 100%; }
-  .cuadrado2 {
-    width: 100%; }
-  .cuadrado3 {
-    width: 100%; }
-  .cuadrado3 img {
-    width: 100%; } }
-
-@media only screen and (max-width: 1024px) {
-  .cuadrados {
-    flex-direction: column; }
-  .cuadrado1 {
-    width: 100%; }
-  .cuadrado2 {
-    width: 100%; }
-  .cuadrado3 {
-    width: 100%; } }

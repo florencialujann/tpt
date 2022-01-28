@@ -110,12 +110,7 @@ h2{
 }
 
 //<!--------GALLERY-------->
-.galeria{
-  justify-content: center;
-  align-self: center;
-    margin:1rem;
-  justify-content: center;
-}
+//<!--------en _tarjetaProducto-------->
 
 .cajaChica{
   background-color: $background;
@@ -126,19 +121,12 @@ h2{
   padding-top: 1rem;
   font-size: 15px;
 
-  &.tituloCajaChica{
-    color:lightcoral;
-    
-
-  }
+  
   
 }
 
-.cajaGrande{
-  margin:1rem;
-  justify-content: center;
 
-}
+
 //<!--------FORM-CONTACTO-------->
 
 
