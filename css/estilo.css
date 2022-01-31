@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 h1 {
   color: #121a33de;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,11 +36,6 @@ h6 {
   color: #121a33de;
   font-family: monospace;
   font-weight: lighter; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 body {
   background-color: white;
@@ -132,12 +132,9 @@ h2 {
   padding-top: 1rem;
   font-size: 15px; }
 
-.pContacto {
-  font-size: 13px;
+.formContacto {
+  font-size: 15px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-
-::placeholder {
-  color: #baa1a1; }
 
 .imput {
   background-color: white;
@@ -212,15 +209,12 @@ h2 {
     transition: all .45s; }
 
 .galeria {
-  background-color: whitesmoke;
-  margin: 0 auto;
-  vertical-align: middle;
-  float: none; }
+  margin: 1rem; }
 
 .card {
-  margin: 1rem;
   background-color: #6ca5895b;
-  width: 252px; }
+  width: 252px;
+  margin: 1rem; }
 
 .cajaImagen {
   width: 250px;
@@ -254,27 +248,14 @@ h2 {
   font-size: 12px; }
 
 .btn {
-  background-color: #cec2cc;
-  border-color: #0c554cde; }
+  background-color: rgba(243, 238, 230, 0.708);
+  border-color: #0c554cde;
+  color: #121a33de; }
 
 .row {
   justify-content: center;
   align-self: center;
   align-content: center; }
-
-.tarjeta {
-  background-color: #6ca5895b; }
-
-.card-title {
-  text-transform: uppercase;
-  font-weight: lighter; }
-
-.card-text {
-  font-size: 12px; }
-
-.btn {
-  background-color: #cec2cc;
-  border-color: #0c554cde; }
 
 /* Keyframes */
 @keyframes wiggle {
@@ -361,3 +342,81 @@ h2 {
       right: calc(var(--horizontal-offset) - var(--border-size)); }
   .button:hover .button__vertical {
     transform: scaleY(0); }
+
+/* responsive */
+@media only screen and (max-width: 480px) {
+  .general-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; }
+  .left {
+    align-self: center; }
+  .left img {
+    align-self: center;
+    margin-left: 0; }
+  .right {
+    align-self: center; }
+  .main-links {
+    text-align: center;
+    justify-content: center; }
+  .general-container {
+    align-content: center; }
+  .container-form {
+    display: flex;
+    justify-content: center; }
+  .row {
+    align-content: center;
+    justify-content: center; } }
+
+@media only screen and (max-width: 600px) {
+  .general-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .flex-container {
+    display: flex;
+    flex-direction: column; }
+  .left {
+    display: inline-block;
+    align-self: center;
+    text-align: center; }
+  .right {
+    display: inline-block;
+    display: flex;
+    justify-content: center; }
+  .main-links a {
+    color: #121a33de; }
+  .main-links a:hover {
+    border-radius: 5px;
+    padding: 5px; } }
+
+@media only screen and (max-width: 768px) {
+  .main-links a {
+    font-size: 3rem; }
+  .general-container {
+    flex-direction: column; }
+  .cuadrados {
+    flex-direction: column; }
+  .cuadrado1 {
+    width: 100%; }
+  .cuadrado2 {
+    width: 100%; }
+  .cuadrado3 {
+    width: 100%; }
+  .cuadrado3 img {
+    width: 100%; } }
+
+@media only screen and (max-width: 1024px) {
+  .cuadrados {
+    flex-direction: column; }
+  .cuadrado1 {
+    width: 100%; }
+  .cuadrado2 {
+    width: 100%; }
+  .cuadrado3 {
+    width: 100%; } }
